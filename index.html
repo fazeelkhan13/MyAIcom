@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fazeel Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    color: cyan;
+}
+
+header p {
+    opacity: 0.8;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: cyan;
+    color: black;
+}
+
+/* Section */
+section {
+    padding: 30px;
+}
+
+/* Cards */
+.box {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.02);
+}
+
+/* Image */
+img {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    background: cyan;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #000;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Fazeel Khan</h1>
+    <p>Web Developer | Learning & Growing 🚀</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Skills</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section>
+
+<div class="box">
+    <h2>About Me</h2>
+    <p>I am learning modern web development and building beautiful websites.</p>
+</div>
+
+<div class="box">
+    <h2>My Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript (Basic)</li>
+    </ul>
+</div>
+
+<div class="box">
+    <h2>My Image</h2>
+    <img src="https://via.placeholder.com/200" alt="profile">
+</div>
+
+<div class="box">
+    <h2>My Schedule</h2>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Task</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Practice HTML</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Learn CSS</td>
+        </tr>
+    </table>
+</div>
+
+<div class="box">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name"><br><br>
+        <input type="email" placeholder="Your Email"><br><br>
+        <button>Send Message</button>
+    </form>
+</div>
+
+</section>
+
+<footer>
+    <p>© 2026 Fazeel Portfolio</p>
+</footer>
+
+</body>
+</html>
